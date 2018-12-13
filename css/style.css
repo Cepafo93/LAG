@@ -1,0 +1,150 @@
+/* reset */
+body {
+    font: 16px sans-serif;
+    margin: 0;
+    background-color: var(--dark);
+}
+:root{
+    --warning: rgba(200, 0,0, 1);
+    --info: rgba(0,0,200,1);
+    --success: rgba(0,200,0,1);
+    --radius: 5px;
+    --large-m: 800px;
+    --dark: #333;
+}
+h1,
+h2, h3, p, ul {
+    padding: 0;
+    font-weight: 100;
+    list-style-type: none;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* thème */
+header{
+    line-height:60px;
+    border-bottom-color:#fff;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+}
+
+
+header img{
+    display:block;
+    margin:10px 0 10px 10%;
+    top:25px;
+    width:75px;
+    
+}
+
+main {
+    width:1200px;
+    margin: 100px auto;
+    padding:5px;
+    box-shadow: 0 0 10px var(--dark)
+}
+
+main ul {
+    font-size: 0;
+}
+
+main li {
+    display: inline-block;
+    width: calc(100% / 3 - 30px);
+    /* height: 200px;
+    line-height: 200px; */
+    vertical-align: top;
+    font-size: 1rem;
+    margin: 0 30px 30px 0;
+}
+
+main li:hover{
+    background:#333;
+    opacity:0.4;
+    transition:0.5s;
+}
+
+main li img {
+    display: block;
+    width: 100%;
+    height:220px;
+}
+
+main li img:hover {
+    transition:0.3s;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+
+@media screen and (max-width:1200px){
+
+    main {
+        width:80%;
+        margin: 100px auto;
+        padding:5px;
+        box-shadow: 0 0 10px var(--dark)
+    }
+
+
+    main li {
+        display: inline-block;
+        width: calc(100% /2 - 30px);
+        /* height: 200px;
+        line-height: 200px; */
+        vertical-align: top;
+        font-size: 1rem;
+        margin: 0 30px 30px 0;
+    }
+
+    main li img {
+        display: block;
+        width: 100%;
+        
+
+    }
+}
+
+
+@media screen and (max-width:762px){
+    main {
+        width:80%;
+        margin: 100px auto;
+        padding:5px;
+        box-shadow: 0 0 10px var(--dark)
+    }
+
+
+    main li {
+        display: inline-block;
+        width: calc(100% - 30px);
+        /* height: 200px;
+        line-height: 200px; */
+        vertical-align: top;
+        font-size: 1rem;
+        margin: 0 0 30px 0;
+    }
+
+    main li img {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+
