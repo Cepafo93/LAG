@@ -1,6 +1,6 @@
 <?php
 	
-	function	myQuery($query)
+	function myQuery($query)
 	{
 		global $link;
 

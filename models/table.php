@@ -27,7 +27,7 @@ abstract class Table
 
 	public function save()
     {
-    	//@TODO
+    	
 
     }
     

@@ -1,8 +1,14 @@
 /* reset */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font: 16px sans-serif;
     margin: 0;
-    background-color: var(--dark);
+    padding:0;
+    background:var(--dark);
 }
 :root{
     --warning: rgba(200, 0,0, 1);
@@ -27,56 +33,52 @@ h2, h3, p, ul {
 
 /* thème */
 header{
-    background:url(../img/bfwallpapper.jpg) no-repeat scroll center center / cover;
+    background:url(../img/bfwallpapper.jpg) no-repeat fixed center center / cover;
     background-color:var(--dark);
-    line-height:60px;
+    line-height:50px;
     min-height:100vh;
+    padding:10px 0 0 0;
 }
 
+header p{
+    color:#fff;
+    font-family: Niagara Engraved;
+    font-size:30px;
+    width: 500px;
+}
 
-header img{
+header a i{
+    color:#fff;
+    font-size:40px;
+    background:rgb(91, 151, 121);
+    border-radius: 100px;
+    padding:7px 15px 7px 15px;
+    transition:0.2s;
+}
+
+header a i:hover{
+    background:rgb(132, 216, 174);
+  
+}
+
+.contentHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin:40vh 0 0 0;
+    top:200px;
+}
+
+.logoLag{
     display:block;
-    margin:10px 0 10px 10%;
+    margin:0 0 100px 5%;
     top:25px;
-    width:75px;
-    
+    width:75px;  
 }
 
-main {
-    width:1200px;
-    margin: 40px auto;
-    padding:5px;
-    box-shadow: 0 0 10px var(--dark)
+.logoGame{
+    width:300px; 
 }
-
-main ul {
-    font-size: 0;
-}
-
-main li {
-    display: inline-block;
-    width: calc(100% / 3 - 30px);
-    /* height: 200px;
-    line-height: 200px; */
-    vertical-align: top;
-    font-size: 1rem;
-    margin: 0 30px 30px 0;
-}
-
-main li img {
-    display: block;
-    width: 100%;
-    height:220px;
-}
-
-.game {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: 220px;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
 
 
 
@@ -86,134 +88,40 @@ main li img {
     color: white;
   }
 
-.bottom-left {
-    transition: .3s ease;
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
 
-  .container:hover .game {
-    opacity: 0.3;
-  }
-  
-  .container:hover .middle {
-    opacity: 1;
-  }
-
-  .middle {
-    transition: .1s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .container:hover .middle .gameButton {
-    background-color: rgb(91, 151, 121);
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-    border-radius:10px;
-    text-decoration: none;
-  }
-
-  .container:hover .middle .gameButton:hover {
-    background-color: rgb(112, 187, 150);
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-    border-radius:10px;
-    text-decoration: none;
-  }
-
-  .container:hover .bottom-left{
-      opacity:1;
+  #reservation{
+      height:1000px;
   }
 
 
 
 @media screen and (max-width:1200px){
 
-    main {
-        width:740px;
-        margin: 100px auto;
-        padding:5px;
-        box-shadow: 0 0 10px var(--dark)
-    }
-
-
-    main li {
-        display: inline-block;
-        width: calc(100% /2 - 30px);
-        /* height: 200px;
-        line-height: 200px; */
-        vertical-align: top;
-        font-size: 1rem;
-        margin: 0 30px 30px 0;
-    }
-
-    main li img {
-        display: block;
-        width: 100%;
-    }
 }
 
 
 @media screen and (max-width:768px){
-    main {
-        width:400px;
-        margin: 100px auto;
-        padding:5px;
-        box-shadow: 0 0 10px var(--dark)
-    }
 
-
-    main li {
-        display: inline-block;
-        width: calc(100% - 30px);
-        /* height: 200px;
-        line-height: 200px; */
-        vertical-align: top;
-        font-size: 1rem;
-        margin: 0 0 30px 0;
-    }
-
-    main li img {
-        display: block;
-        width: 100%;
-    }
 
 }
 
 
 @media screen and (max-width:480px){
-    main {
+
+    header p {
         width:80%;
-        margin: 100px auto;
-        padding:5px;
-        box-shadow: 0 0 10px var(--dark)
+        font-size:14px;
+        margin: 0 10% 0 10%;
+
     }
 
-
-    main li {
-        display: inline-block;
-        width: calc(100% - 30px);
-        /* height: 200px;
-        line-height: 200px; */
-        vertical-align: top;
-        font-size: 1rem;
-        margin: 0 0 30px 0;
-    }
-
-    main li img {
-        display: block;
-        width: 100%;
+    .logoGame{
+        display:block;
+        margin:40vh 0  0 10%;
+        width:300px;
     }
 
 }
 
 
+ 
