@@ -45,6 +45,12 @@ header p{
     font-family: Niagara Engraved;
     font-size:30px;
     width: 500px;
+    text-align:justify;
+}
+
+header a {
+    display:block;
+    text-align:center;
 }
 
 header a i{
@@ -54,6 +60,7 @@ header a i{
     border-radius: 100px;
     padding:7px 15px 7px 15px;
     transition:0.2s;
+    
 }
 
 header a i:hover{
@@ -63,9 +70,9 @@ header a i:hover{
 
 .contentHeader{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
-    margin:40vh 0 0 0;
+    margin:40vh 5% 0 5%;
     top:200px;
 }
 
@@ -80,7 +87,9 @@ header a i:hover{
     width:300px; 
 }
 
-
+section{
+    padding:50px 50px 0 50px;
+}
 
 .container {
     position: relative;
@@ -88,37 +97,222 @@ header a i:hover{
     color: white;
   }
 
+  
+  #disponibilites{
+    margin: 50px 0 50px 0;
+    padding:50px 0 50px 0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+  }
 
-  #reservation{
-      height:1000px;
+  #calendrier{
+    float:left;
+    width:500px;
+    height:300px;
+    background:#fff;
+}
+
+  .form{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    align-content: space-between;
+    flex-direction:row;
+    height:300px;
+  }
+
+  .choixCoaching{
+      display:flex;
+      justify-content:space-between;
+      align-items: flex-start;
+      float:right;
+      margin:0 0 0 60px;
+      flex-direction:column;
+      height:150px;
+  }
+
+  .buttonCoaching{
+    color:#fff;
+    background:rgb(91, 151, 121);
+    padding:15px;
+    border:none;
+    border-radius:10px;
+  }
+
+  .boutonsChoix{
+      display:flex;
+      justify-content:space-between;
+      width:330px;
+  }
+
+  .selectCoaching{
+    
+    color:#000;
+    background:#fff;
+    padding:15px 45px 15px 45px;
+    border:none;
+    border-radius:10px;
+  }
+
+  .buttonCoaching:hover{
+    color:#fff;
+    background:rgb(132, 216, 174);
+    padding:15px;
+    border:none;
+    border-radius:10px;
   }
 
 
 
-@media screen and (max-width:1200px){
+  #coachs{
+    background:#333;
+  }
+
+  section h1{
+      color:#fff;
+  }
+
+
+
+@media screen and (max-width:1024px){
+    .contentHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin:40vh 5% 0 5%;
+        top:200px;
+    }
+    
+    header h2{
+        display:none;
+        }
 
 }
 
 
 @media screen and (max-width:768px){
 
+    .contentHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin:40vh 5% 0 5%;
+        top:200px;
+    }
+        header h2{
+        display:none;
+        }
+
+        header p {
+            text-align:justify;
+            width:80%;
+        }
+
+        .form{
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-start;
+            align-content: space-between;
+            flex-direction:column;
+            height:300px;
+          }
 
 }
 
-
 @media screen and (max-width:480px){
 
-    header p {
-        width:80%;
-        font-size:14px;
-        margin: 0 10% 0 10%;
+    .contentHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin:20vh 5% 0 5%;
+        top:200px;
+    }
 
+    header p {
+        display:none;
+        width:80%;
+        margin: 0 10% 0 10%;
+    }
+
+    header h2{
+        display:none;
     }
 
     .logoGame{
         display:block;
-        margin:40vh 0  0 10%;
+        margin:0 0 0 10%;
         width:300px;
+    }
+
+    .reservation{
+        border:solid 1px #fff;
+        margin: 100px 0 0 0;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+        flex-direction:column;
+      }
+    
+      #calendrier{
+        float:left;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction:column;
+    }
+      .form{
+        float:right;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+        flex-direction:column;
+      }
+    
+      .choixCoaching{
+          display:flex;
+          float:left;
+          justify-content:space-between;
+        align-items: flex-start;
+        flex-direction:row;
+      }
+    
+      .inputs{
+        display:flex;
+        float:right;
+        justify-content:space-between;
+        align-items: flex-start;
+        flex-direction:row;
+      }
+    
+      #coachs{
+    
+      }
+
+      .form{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        align-content: space-between;
+        flex-direction:column;
+        
+      }
+
+      #calendrier{
+          margin:0 0 20px 0;
+          height:700px;
+      }
+
+      .choixCoaching{
+        display:flex;
+        justify-content:space-between;
+        align-items: flex-start;
+        float:right;
+        margin:0 0 0 30px;
+        flex-direction:column;
+        height:1200px;
     }
 
 }
